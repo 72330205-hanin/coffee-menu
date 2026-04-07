@@ -1,0 +1,173 @@
+.custom-navbar {
+  background-color: #f7f5f1;
+  height: 80px;
+  border-bottom: 1px solid #e5e0d8;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.navbar-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.logo-img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.logo-text h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.logo-text p {
+  margin: 0;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #6c6c6c;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #444;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nav-links li a:hover {
+  color: black;
+}
+
+.view-menu-btn {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 14px 28px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.view-menu-btn:hover {
+  color: white;
+  background-color: #222;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #111;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.mobile-menu {
+  display: none;
+}
+@media (max-width: 768px) {
+  .desktop-links,
+  .view-menu-btn {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #111;
+  }
+
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #f7f5f1;
+    border-top: 1px solid #e5e0d8;
+    border-bottom: 1px solid #e5e0d8;
+    padding: 10px 20px 16px;
+    z-index: 999;
+  }
+
+  .mobile-menu.show {
+    display: block;
+  }
+
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobile-menu li {
+    border-bottom: 1px solid #e5e0d8;
+  }
+
+  .mobile-menu li:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-menu a {
+    display: block;
+    text-decoration: none;
+    color: #111;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+    padding: 12px 0;
+  }
+
+  .mobile-menu a:hover {
+    color: #444;
+  }
+
+  .mobile-btn {
+    margin-top: 14px;
+    background-color: #000;
+    color: #fff !important;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 13px !important;
+    border: none;
+  }
+}

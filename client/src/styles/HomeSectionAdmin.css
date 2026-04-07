@@ -1,0 +1,210 @@
+.home-admin-page {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.home-admin-title {
+  font-size: 38px;
+  margin: 0 0 10px;
+  color: #111;
+}
+
+.home-admin-subtitle {
+  font-size: 16px;
+  color: #6b635d;
+  margin-bottom: 24px;
+}
+
+.home-admin-table-wrapper {
+  background: #fcfaf7;
+  border: 1px solid #ddd6cc;
+  border-radius: 18px;
+  overflow-x: auto;
+}
+
+.home-admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1100px;
+}
+
+.home-admin-table th,
+.home-admin-table td {
+  padding: 18px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e7dfd6;
+  vertical-align: top;
+  font-size: 15px;
+}
+
+.home-admin-table th {
+  background: #f7f1ea;
+  color: #111;
+  font-weight: 700;
+}
+
+.home-admin-table td {
+  color: #4f4842;
+}
+
+.home-admin-link-text {
+  color: #7a726b;
+  font-size: 13px;
+}
+
+.home-admin-action-cell {
+  position: relative;
+}
+
+.home-admin-action-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #222;
+}
+
+.home-admin-dropdown {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  background: white;
+  border: 1px solid #ddd6cc;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+}
+
+.home-admin-dropdown button {
+  background: transparent;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.home-admin-dropdown button:hover {
+  background: #f2e8dd;
+}
+
+.home-admin-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  padding: 20px;
+}
+
+.home-admin-modal {
+  background: #fcfaf7;
+  border-radius: 18px;
+  width: 100%;
+  max-width: 700px;
+  padding: 28px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.home-admin-modal h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.home-admin-form {
+  display: grid;
+  gap: 14px;
+}
+
+.home-admin-form input,
+.home-admin-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d9cfc3;
+  border-radius: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  background: white;
+}
+
+.home-admin-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.cancel-btn,
+.save-btn {
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+}
+
+.cancel-btn {
+  background: #e9e0d6;
+  color: #111;
+}
+
+.save-btn {
+  background: #2d1a12;
+  color: white;
+}
+
+.save-btn:hover {
+  background: #3b2419;
+}
+
+@media (max-width: 768px) {
+  .home-admin-title {
+    font-size: 30px;
+  }
+
+  .home-admin-modal {
+    padding: 20px;
+  }
+}
+
+.custom-file-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d9cfc3;
+  border-radius: 10px;
+  padding: 10px 14px;
+  background: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.file-name {
+  color: #555;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.file-label {
+  background: #2d1a12;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.file-label:hover {
+  background: #3b2419;
+}
+
+.home-admin-table td:nth-child(3) {
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

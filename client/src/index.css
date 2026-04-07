@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  background-color: #f7f5f1;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+}

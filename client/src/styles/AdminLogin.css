@@ -1,0 +1,117 @@
+.admin-login-page {
+  min-height: 100vh;
+  background-color: #f4f0ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Times New Roman', serif;
+}
+
+.admin-login-container {
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+.admin-login-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+.admin-login-subtitle {
+  color: #777;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.admin-login-card {
+  background: #f7f3ef;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.admin-login-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+  color: #1a1a1a;
+}
+
+.admin-password-wrapper {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.admin-input-icon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.admin-login-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  background: transparent;
+}
+
+.admin-eye-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.admin-login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #2d1a12;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.admin-login-btn:hover {
+  background: #3b2419;
+}
+
+.admin-input-icon svg,
+.admin-eye-btn svg {
+  font-size: 20px;
+  color: #555;
+}
+
+/* Remove default browser eye icon */
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-textfield-decoration-container {
+  display: none !important;
+}
+
+/* For Chrome / Edge */
+input[type="password"]::-webkit-inner-spin-button,
+input[type="password"]::-webkit-outer-spin-button {
+  display: none;
+}
+
+.admin-login-error {
+  color: #b00020;
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: left;
+}

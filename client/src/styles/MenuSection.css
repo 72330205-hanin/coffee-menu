@@ -1,0 +1,133 @@
+.menu-section {
+  background-color: #f7f5f1;
+  padding: 70px 0 30px;
+}
+
+.menu-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 34px;
+}
+
+.menu-section-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  flex: 1;
+}
+
+.menu-section-icon {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  border: 1px solid #ddd2c7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #efe9df;
+  transition: all 0.3s ease;
+}
+
+.menu-section-icon svg {
+  font-size: 22px;
+  color: #111;
+}
+
+.menu-section-heading {
+  flex: 1;
+}
+.menu-section-header:hover .menu-section-icon {
+  background-color: #e8dfd2;
+}
+.menu-section-title-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu-section-title-row h2 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 400;
+  color: #111;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.menu-section-line {
+  flex: 1;
+  height: 1px;
+  background-color: #ddd2c7;
+  display: block;
+}
+
+.menu-section-heading p {
+  margin: 6px 0 0 0;
+  font-size: 17px;
+  color: #5d554c;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.menu-section-count {
+  border: 1px solid #ddd2c7;
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-size: 16px;
+  color: #5d554c;
+  white-space: nowrap;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.menu-section-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+@media (max-width: 576px) {
+  .menu-section-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu-section-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-section-count {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-section {
+    padding: 45px 0 20px;
+  }
+
+  .menu-section-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-section-title-row h2 {
+    font-size: 28px;
+  }
+
+  .menu-section-heading p {
+    font-size: 15px;
+  }
+
+  .menu-section-count {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}

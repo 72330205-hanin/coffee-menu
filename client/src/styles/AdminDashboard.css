@@ -1,0 +1,148 @@
+.admin-dashboard {
+  color: #111;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.admin-dashboard-heading {
+  font-size: 48px;
+  line-height: 1;
+  margin: 0 0 14px;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.admin-dashboard-subheading {
+  font-size: 16px;
+  color: #655f59;
+  margin: 0 0 28px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.admin-stats-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.admin-stats-grid-top {
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 20px;
+}
+
+.admin-stats-grid-bottom {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.admin-stat-card {
+  background: #fcfaf7;
+  border: 1px solid #ddd6cc;
+  border-radius: 22px;
+  padding: 26px 28px;
+  min-height: 155px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+  transition: 0.3s ease;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.admin-stat-card:hover {
+  background: #efe6dc;
+  border-color: #d6c7b7;
+  transform: translateY(-3px);
+}
+
+.admin-stat-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 28px;
+  color: #4e4741;
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.admin-stat-card-header svg {
+  font-size: 24px;
+  color: #4e4741;
+}
+
+.admin-stat-card.small h2,
+.admin-stat-card.large h2 {
+  margin: 0 0 8px;
+  font-size: 34px;
+  font-weight: 700;
+  color: #111;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.admin-stat-card p {
+  margin: 0;
+  font-size: 14px;
+  color: #6c655e;
+  line-height: 1.45;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.admin-stat-title-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #111;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.admin-home-stats {
+  display: flex;
+  gap: 36px;
+  align-items: flex-start;
+}
+
+.admin-home-stats h2 {
+  margin: 0 0 6px;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.admin-home-stats p {
+  margin: 0;
+  font-size: 14px;
+  color: #5d5751;
+  font-family: "Times New Roman", Times, serif;
+}
+
+@media (max-width: 1200px) {
+  .admin-stats-grid-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .admin-stats-grid-bottom {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard-heading {
+    font-size: 34px;
+  }
+
+  .admin-stats-grid-top {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-home-stats {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .admin-stat-card {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .admin-dashboard-heading {
+    font-size: 30px;
+  }
+}
