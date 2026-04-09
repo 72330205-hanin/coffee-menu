@@ -13,9 +13,9 @@ const db = require('./db');
    CORS
 ========================= */
 const allowedOrigins = [
-  process.env.FRONTEND_URL,
+  'https://coffee-menu-chi-tawny.vercel.app',
   'http://localhost:3000'
-].filter(Boolean);
+];
 
 app.use(
   cors({
