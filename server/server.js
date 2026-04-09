@@ -51,12 +51,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/test', (req, res) => {
-  db.query('SELECT * FROM hero_section', (err, result) => {
-    if (err) {
-      return res.status(500).json({ error: err.message });
-    }
-    res.json(result);
-  });
+  res.json({ message: "API works perfectly" });
 });
 
 /* =========================
